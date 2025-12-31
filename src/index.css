@@ -2,143 +2,265 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Wine Red Professional + Feminine Palette - Light Mode */
+    --background: 30 30% 98%;
+    --foreground: 345 30% 15%;
+
+    --card: 30 25% 96%;
+    --card-foreground: 345 30% 15%;
+
+    --popover: 30 25% 96%;
+    --popover-foreground: 345 30% 15%;
+
+    /* Wine Red Primary */
+    --primary: 345 55% 35%;
+    --primary-foreground: 30 30% 98%;
+    --primary-glow: 345 55% 45%;
+
+    /* Soft Rose Secondary */
+    --secondary: 345 25% 90%;
+    --secondary-foreground: 345 40% 25%;
+
+    /* Warm Muted */
+    --muted: 30 20% 94%;
+    --muted-foreground: 345 15% 45%;
+
+    /* Blush Accent */
+    --accent: 345 35% 85%;
+    --accent-foreground: 345 50% 30%;
+
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+    --destructive-foreground: 30 30% 98%;
+
+    --border: 345 20% 88%;
+    --input: 345 20% 88%;
+    --ring: 345 55% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom Colors */
+    --wine: 345 55% 35%;
+    --wine-light: 345 45% 50%;
+    --wine-dark: 345 60% 25%;
+    --rose: 345 35% 75%;
+    --rose-light: 345 30% 90%;
+    --blush: 355 40% 88%;
+    --cream: 35 35% 96%;
+    --charcoal: 345 20% 20%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(345 55% 35%), hsl(345 45% 50%));
+    --gradient-hero: linear-gradient(180deg, hsl(30 30% 98%) 0%, hsl(345 30% 95%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(30 25% 96%), hsl(345 25% 94%));
+    --gradient-text: linear-gradient(135deg, hsl(345 55% 35%), hsl(345 40% 50%));
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(345 55% 35% / 0.1);
+    --shadow-md: 0 8px 24px -8px hsl(345 55% 35% / 0.15);
+    --shadow-lg: 0 16px 48px -12px hsl(345 55% 35% / 0.2);
+    --shadow-glow: 0 0 40px hsl(345 55% 45% / 0.3);
+
+    /* Sidebar */
+    --sidebar-background: 30 25% 96%;
+    --sidebar-foreground: 345 30% 15%;
+    --sidebar-primary: 345 55% 35%;
+    --sidebar-primary-foreground: 30 30% 98%;
+    --sidebar-accent: 345 35% 85%;
+    --sidebar-accent-foreground: 345 50% 30%;
+    --sidebar-border: 345 20% 88%;
+    --sidebar-ring: 345 55% 35%;
   }
+
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    /* Wine Red Professional + Feminine Palette - Dark Mode */
+    --background: 345 25% 8%;
+    --foreground: 30 25% 95%;
+
+    --card: 345 20% 12%;
+    --card-foreground: 30 25% 95%;
+
+    --popover: 345 20% 12%;
+    --popover-foreground: 30 25% 95%;
+
+    /* Wine Red Primary - Brighter for dark mode */
+    --primary: 345 50% 55%;
+    --primary-foreground: 345 25% 8%;
+    --primary-glow: 345 50% 65%;
+
+    /* Muted Rose Secondary */
+    --secondary: 345 25% 18%;
+    --secondary-foreground: 345 30% 80%;
+
+    /* Deep Muted */
+    --muted: 345 20% 15%;
+    --muted-foreground: 345 15% 60%;
+
+    /* Dark Accent */
+    --accent: 345 30% 20%;
+    --accent-foreground: 345 40% 75%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 30 25% 95%;
+
+    --border: 345 20% 18%;
+    --input: 345 20% 18%;
+    --ring: 345 50% 55%;
+
+    /* Custom Colors - Dark Mode */
+    --wine: 345 50% 55%;
+    --wine-light: 345 45% 65%;
+    --wine-dark: 345 55% 40%;
+    --rose: 345 35% 45%;
+    --rose-light: 345 30% 25%;
+    --blush: 355 30% 20%;
+    --cream: 35 20% 90%;
+    --charcoal: 345 20% 12%;
+
+    /* Gradients - Dark Mode */
+    --gradient-primary: linear-gradient(135deg, hsl(345 50% 55%), hsl(345 45% 65%));
+    --gradient-hero: linear-gradient(180deg, hsl(345 25% 8%) 0%, hsl(345 20% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(345 20% 12%), hsl(345 25% 15%));
+    --gradient-text: linear-gradient(135deg, hsl(345 50% 55%), hsl(345 40% 70%));
+
+    /* Shadows - Dark Mode */
+    --shadow-sm: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 8px 24px -8px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 16px 48px -12px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 60px hsl(345 50% 55% / 0.25);
+
+    /* Sidebar - Dark Mode */
+    --sidebar-background: 345 20% 10%;
+    --sidebar-foreground: 30 25% 95%;
+    --sidebar-primary: 345 50% 55%;
+    --sidebar-primary-foreground: 345 25% 8%;
+    --sidebar-accent: 345 30% 20%;
+    --sidebar-accent-foreground: 345 40% 75%;
+    --sidebar-border: 345 20% 18%;
+    --sidebar-ring: 345 50% 55%;
   }
 }
-
-
 
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-text);
+  }
+
+  .bg-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .shadow-wine {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .link-underline {
+    @apply relative inline-block;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute w-full h-0.5 bottom-0 left-0 bg-primary origin-bottom-right transition-transform duration-300 scale-x-0;
+  }
+
+  .link-underline:hover::after {
+    @apply origin-bottom-left scale-x-100;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
