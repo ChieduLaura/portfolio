@@ -28,7 +28,7 @@ const skills = [
   {
     icon: Palette,
     title: "UI/UX Design",
-    description: "Figma, User Research, Prototyping",
+    description: "Figma, Prototyping, Canva",
     color: "text-primary",
   },
   {

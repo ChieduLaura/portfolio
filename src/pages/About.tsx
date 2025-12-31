@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Award, BookOpen, Coffee, Heart } from "lucide-react";
+import profilepic from "@/assets/profilepic.jpeg"
 
 const aboutStats = [
   { icon: Coffee, label: "Cups of Coffee", value: "500+" },
@@ -27,12 +28,17 @@ const About = () => {
             {/* Image */}
             <div className="relative animate-fade-up delay-100">
               <div className="relative rounded-3xl overflow-hidden">
-                <div className="aspect-[4/5] bg-gradient-to-br from-primary/20 to-rose/20 flex items-center justify-center">
+                <div className="aspect-[5/5] bg-gradient-to-br from-primary/20 to-rose/20 flex items-center justify-center">
+                 <img 
+                    src={profilepic} 
+                    alt="Developer profile" 
+                    className="w-full h-full object-cover"
+                  />
                   <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto rounded-full bg-secondary flex items-center justify-center mb-4">
-                      <span className="text-4xl font-serif font-bold text-gradient">YN</span>
-                    </div>
-                    <p className="text-muted-foreground text-sm">Your photo here</p>
+                    
+                      
+                   
+                    
                   </div>
                 </div>
               </div>

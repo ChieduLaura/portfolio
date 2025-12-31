@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/ChieduLaura", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/laura-chiedu-067224308/", label: "LinkedIn" },
+  { icon: Mail, href: "chiedulaura200@gmail.com", label: "Email" },
 ];
 
 export const Footer = () => {
@@ -16,7 +15,7 @@ export const Footer = () => {
           {/* Logo & Tagline */}
           <div className="text-center md:text-left">
             <Link to="/" className="font-serif text-xl font-bold text-gradient">
-              Portfolio
+              Laura Chiedu
             </Link>
             <p className="mt-2 text-sm text-muted-foreground">
               Full Stack Developer • Data Science • AI Enthusiast
@@ -43,7 +42,7 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-            Made with <Heart className="h-4 w-4 text-primary fill-primary" /> © {new Date().getFullYear()}
+           LauraChiedu <Heart className="h-4 w-4 text-primary fill-primary" /> © {new Date().getFullYear()}
           </p>
         </div>
       </div>

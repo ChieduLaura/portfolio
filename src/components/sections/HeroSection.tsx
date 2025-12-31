@@ -25,7 +25,7 @@ export const HeroSection = () => {
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight mb-6 animate-fade-up delay-100">
             Hi, I'm{" "}
-            <span className="text-gradient">Your Name</span>
+            <span className="text-gradient">Laura Chiedu</span>
           </h1>
 
           {/* Subtitle */}
@@ -55,10 +55,10 @@ export const HeroSection = () => {
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border/50 animate-fade-up delay-400">
             <div className="text-center">
               <p className="text-3xl md:text-4xl font-serif font-bold text-gradient">3+</p>
-              <p className="text-sm text-muted-foreground mt-1">Years Experience</p>
+              <p className="text-sm text-muted-foreground mt-1">Programming Languages</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl md:text-4xl font-serif font-bold text-gradient">20+</p>
+              <p className="text-3xl md:text-4xl font-serif font-bold text-gradient">4+</p>
               <p className="text-sm text-muted-foreground mt-1">Projects Completed</p>
             </div>
             <div className="text-center">
