@@ -3,9 +3,9 @@ import { Award, BookOpen, Coffee, Heart } from "lucide-react";
 import profilepic from "@/assets/profilepic.jpeg"
 
 const aboutStats = [
-  { icon: Coffee, label: "Cups of Coffee", value: "500+" },
+  { icon: Coffee, label: "Frameworks Learnt", value: "5+" },
   { icon: BookOpen, label: "Courses Completed", value: "15+" },
-  { icon: Award, label: "Certifications", value: "5" },
+  { icon: Award, label: "Certifications", value: "3" },
   { icon: Heart, label: "Open Source Contributions", value: "30+" },
 ];
 
@@ -70,9 +70,8 @@ const About = () => {
                   complex problems in creative ways.
                 </p>
                 <p>
-                  When I'm not coding, you can find me exploring new technologies,
-                  contributing to open-source projects, or enjoying a good cup of
-                  coffee while reading about the latest trends in tech.
+                  When I'm not coding, you can find me exploring new technologies, creating new UI designs,
+                  contributing to open-source projects, or taking my time reading a good book.
                 </p>
               </div>
 
@@ -80,7 +79,7 @@ const About = () => {
               <div className="mt-8">
                 <h3 className="text-sm font-semibold text-foreground mb-3">Tech Stack</h3>
                 <div className="flex flex-wrap gap-2">
-                  {["React", "TypeScript", "Node.js", "Python", "PostgreSQL", "TensorFlow", "AWS", "Docker"].map((skill) => (
+                  {["React", "TypeScript", "Node.js", "Python", "PostgreSQL", "React.js", "Java", "Docker"].map((skill) => (
                     <span
                       key={skill}
                       className="px-3 py-1 text-sm bg-secondary text-secondary-foreground rounded-full"
@@ -117,10 +116,10 @@ const About = () => {
             </h2>
             <div className="max-w-3xl mx-auto space-y-8">
               {[
-                { year: "2024", title: "AI & ML Focus", description: "Deep diving into machine learning and AI applications" },
-                { year: "2023", title: "Full Stack Mastery", description: "Building end-to-end applications with modern frameworks" },
-                { year: "2022", title: "Data Science Exploration", description: "Started exploring data analysis and visualization" },
-                { year: "2021", title: "The Beginning", description: "Started my journey in web development" },
+                { year: "2025", title: "AI & ML Focus", description: "Deep diving into machine learning and AI applications" },
+                { year: "2024", title: "Algorithms and Development", description: "Building end-to-end applications with modern frameworks" },
+                { year: "2023", title: "Simple Framework knowledge", description: "Started learning C++ AND C# and built small applications" },
+                { year: "2022", title: "The Beginning", description: "Started my journey in web development" },
               ].map((item, index) => (
                 <div
                   key={item.year}

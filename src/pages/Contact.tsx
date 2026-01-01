@@ -2,15 +2,14 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Twitter, Mail, MapPin, Send, Instagram } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Send, Instagram } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub", username: "@yourusername" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn", username: "in/yourusername" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter", username: "@yourusername" },
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram", username: "@yourusername" },
+  { icon: Github, href: "https://github.com/ChieduLaura", label: "GitHub", username: "ChieduLaura" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/laura-chiedu-067224308/", label: "LinkedIn", username: "in/Laurachiedu" },
+  { icon: Instagram, href: "https://instagram.com", label: "Instagram", username: "Laurachiedu" },
 ];
 
 const Contact = () => {
@@ -62,8 +61,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
-                    <a href="mailto:hello@example.com" className="font-medium hover:text-primary transition-colors">
-                      hello@example.com
+                    <a href="chiedulaura200@gmail.com.com" className="font-medium hover:text-primary transition-colors">
+                      chiedulaura200@gmail.com
                     </a>
                   </div>
                 </div>
@@ -74,7 +73,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium">Remote / Your City</p>
+                    <p className="font-medium">Remote / Lagos State</p>
                   </div>
                 </div>
               </div>
